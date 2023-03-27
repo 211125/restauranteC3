@@ -7,11 +7,11 @@ import javafx.scene.shape.Circle;
 
 public class Cliente implements Runnable{
     private AnchorPane anchor;
-    private Restaurant restaurant;
+    private Monitor monitor;
     private static String[] positions;
-    public Cliente(AnchorPane anchor, Restaurant restaurant){
+    public Cliente(AnchorPane anchor, Monitor monitor){
         this.anchor = anchor;
-        this.restaurant=restaurant;
+        this.monitor = monitor;
         positions = new String[24];
         positions[0] = "235 60";
         positions[1] = "336 60";
@@ -54,7 +54,7 @@ public class Cliente implements Runnable{
             }
             Platform.runLater(()-> cliente.setLayoutY(cliente.getLayoutY()-50));
         }
-        boolean reservation = restaurant.reservar(Thread.currentThread().getName());
+        boolean reservation = monitor.reservar(Thread.currentThread().getName());
         if(reservation) {
             Platform.runLater(()-> cliente.setFill(Color.TRANSPARENT));
         }
@@ -64,7 +64,7 @@ public class Cliente implements Runnable{
         }
 
         //Posicionar a los clientes en lase mesas con forme el id
-        int numMesa = restaurant.entrar(Thread.currentThread().getName());
+        int numMesa = monitor.entrar(Thread.currentThread().getName());
         String[] layout = positions[numMesa].split(" ");
         Platform.runLater(()-> {
             cliente.setLayoutX(Integer.parseInt(layout[0]));
@@ -79,7 +79,7 @@ public class Cliente implements Runnable{
 
         //Ordenar
         Platform.runLater(()-> cliente.setFill(Color.MAGENTA));
-        restaurant.ordenar();
+        monitor.ordenar();
 
         try {
             Thread.sleep(700);
@@ -89,7 +89,7 @@ public class Cliente implements Runnable{
 
         //Comer
         Platform.runLater(()-> cliente.setFill(Color.MAROON));
-        restaurant.comer();
+        monitor.comer();
         try {
             Thread.sleep(19000);
         } catch (InterruptedException e) {
@@ -98,6 +98,6 @@ public class Cliente implements Runnable{
         //Salir
         Platform.runLater(() -> cliente.setFill(Color.TRANSPARENT));
 
-        restaurant.salir(numMesa);
+        monitor.salir(numMesa);
     }
 }

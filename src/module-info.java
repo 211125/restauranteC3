@@ -3,4 +3,5 @@ module RestauranteMarriot {
     requires javafx.controls;
 
     opens principal;
+    opens Controllers;
 }

@@ -1,4 +1,4 @@
-package principal;
+package Controllers;
 
 import Model.*;
 import javafx.application.Platform;
@@ -40,51 +40,31 @@ public class Controller implements Observer {
 
     @FXML
     void IniciarAnimacion(ActionEvent event) {
-
         mesero.setFill(Color.GREEN);
         btnIniciar.setDisable(true);
-        Restaurant restaurant = new Restaurant();
-        restaurant.addObserver(this::update);
-        Mesero mesero=new Mesero(anchor, restaurant);
-        Recepcionista recepcionista=new Recepcionista(restaurant);
-        Cocinero cocinero = new Cocinero(restaurant);
-        HilosCreados hilosCreados = new HilosCreados(anchor, restaurant, this);
+        //sse agrega al observador los cambios los hace en restaurante
+        Monitor monitor = new Monitor();
+        monitor.addObserver(this::update);
+
+        Mesero mesero=new Mesero(anchor, monitor);
+        Recepcionista recepcionista=new Recepcionista(monitor);
+
+        Cocinero cocinero = new Cocinero(monitor);
+        HilosCreados hilosCreados = new HilosCreados(anchor, monitor, this);
+
         Thread hiloMesero = new Thread(mesero);
-        Thread hiloRecepcionista = new Thread(recepcionista);
-        Thread hCocinero = new Thread(cocinero);
-        Thread hCreadorClientes = new Thread(hilosCreados);
-        hiloMesero.setDaemon(true);
         hiloMesero.start();
-        hiloRecepcionista.setDaemon(true);
+
+        Thread hiloRecepcionista = new Thread(recepcionista);
         hiloRecepcionista.start();
-        hCocinero.setDaemon(true);
+
+        Thread hCocinero = new Thread(cocinero);
         hCocinero.start();
-        hCreadorClientes.setDaemon(true);
+
+        Thread hCreadorClientes = new Thread(hilosCreados);
         hCreadorClientes.start();
-        positions = new String[23];
-        positions[0] = "235 60";
-        positions[1] = "336 60";
-        positions[2] = "438 60";
-        positions[3] = "546 60";
-        positions[4] = "644 60";
-        positions[5] = "750 60";
-        positions[6] = "833 60";
 
-        positions[7] = "929 114";
-        positions[8] = "929 224";
-        positions[9] = "929 307";
-        positions[10] = "836 398";
 
-        positions[11] = "740 398";
-        positions[12] = "644 389";
-        positions[13] = "550 389";
-        positions[14] = "445 389";
-        positions[15] = "336 389";
-        positions[16] = "235 389";
-        positions[17] = "166 315";
-
-        positions[18] = "166 224";
-        positions[19] = "166 127";
     }
 
     @Override

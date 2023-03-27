@@ -2,8 +2,8 @@ package Model;
 
 import java.util.Observable;
 
-public class Restaurant extends Observable {
-    public boolean VIPClient;
+public class Monitor extends Observable {
+
     public boolean reservacionLibre;
     public boolean client;
     public boolean accEntrar;
@@ -18,8 +18,7 @@ public class Restaurant extends Observable {
     public boolean[] mesas;
     public int auxMesa;
 
-    public Restaurant(){
-        VIPClient=false;
+    public Monitor(){
         reservacionLibre = true;
         client=false;
         accEntrar=false;
@@ -40,6 +39,7 @@ public class Restaurant extends Observable {
 
     public synchronized boolean reservar(String nombre){
         //Para el hilo cliente
+        //Solo un hilo a la vez puede puede reservar una mesa
         synchronized (this) {
             if(reservacionLibre){
                 reservacionLibre =false;
@@ -58,6 +58,7 @@ public class Restaurant extends Observable {
     }
 
     public int entrar(String nombre){
+        // comprueba y verifica la entrada de los clientes
         int numMesa = -1;
         try {
             if(reservado.equals(nombre)){
@@ -91,6 +92,7 @@ public class Restaurant extends Observable {
         return numMesa;
     }
     public void ordenar(){
+        //Solo un hilo a la vez puede entrar a ordenar
         synchronized (this) {
             orden++;
             notifyAll();
@@ -98,6 +100,7 @@ public class Restaurant extends Observable {
     }
 
     public void servirOrden(){
+        //El mesero atiende una mesa
         String txt = "libreMesero";
         boolean aux = false;
         synchronized (this) {
@@ -127,6 +130,7 @@ public class Restaurant extends Observable {
         }
     }
     public void cocinar(){
+        //Se cocina solo una vez, y esto va conforme a al pedido
         String txt = "libre";
         synchronized (this) {
             if (peticiones<=0){
@@ -164,6 +168,7 @@ public class Restaurant extends Observable {
         }
     }
     public void salir(int numMesaLibre){
+        //Solo puede salir un cliente a la vez
         synchronized (this) {
             if(!confirmacion){
                 confirmacion=true;
@@ -182,6 +187,7 @@ public class Restaurant extends Observable {
         }
     }
     public void recepcion(){
+        //Solo deja entrar un cliente a la vez
         synchronized (this) {
             while(numClientes < 1 || client){
                 try {

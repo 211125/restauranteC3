@@ -1,9 +1,9 @@
 package Model;
 
 public class Recepcionista implements Runnable{
-    private Restaurant restaurant;
-    public Recepcionista(Restaurant restaurant){
-        this.restaurant=restaurant;
+    private Monitor monitor;
+    public Recepcionista(Monitor monitor){
+        this.monitor = monitor;
     }
     @Override
     public void run() {
@@ -13,7 +13,7 @@ public class Recepcionista implements Runnable{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            restaurant.recepcion();
+            monitor.recepcion();
 
         }
     }
