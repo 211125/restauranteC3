@@ -1,11 +1,14 @@
 package Model;
 
 import javafx.application.Platform;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
 public class Cliente implements Runnable{
+    private ImageView clientev;
     private AnchorPane anchor;
     private Monitor monitor;
     private static String[] positions;
@@ -40,11 +43,14 @@ public class Cliente implements Runnable{
     @Override
     public void run() {
         Circle cliente = new Circle(15, Color.BURLYWOOD);
+        //clientev =  new ImageView(new Image(getClass().getResourceAsStream("/resources/car1.jpg")));
         Platform.runLater(() -> {
-            cliente.setLayoutX(519);
-            cliente.setLayoutY(1133);
+            cliente.setLayoutX(156);
+            cliente.setLayoutY(58);
             anchor.getChildren().add(cliente);
+           // anchor.getChildren().add(clientev);
         });
+
         //Movimiento de los cleintes
         for(int i=0;i<10;i++){
             try {
@@ -52,7 +58,7 @@ public class Cliente implements Runnable{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            Platform.runLater(()-> cliente.setLayoutY(cliente.getLayoutY()-50));
+            Platform.runLater(()-> cliente.setLayoutX(cliente.getLayoutX()+50));
         }
         boolean reservation = monitor.reservar(Thread.currentThread().getName());
         if(reservation) {
