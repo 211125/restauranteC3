@@ -19,6 +19,7 @@ public class HelloController implements Observer {
     @FXML
     private AnchorPane anchor;
 
+
     @FXML
     private Button btnIniciar;
 
@@ -38,7 +39,7 @@ public class HelloController implements Observer {
     void IniciarAnimacion(ActionEvent event) {
         mesero.setFill(Color.GREEN);
         btnIniciar.setDisable(true);
-        //sse agrega al observador los cambios los hace en restaurante
+
         Monitor monitor = new Monitor();
         monitor.addObserver(this::update);
 
