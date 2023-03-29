@@ -6,27 +6,23 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="766.0" prefWidth="1096.0" style="-fx-background-position: 1" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HelloController">
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="736.0" style="-fx-background-position: 1" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HelloController">
    <children>
-      <Button fx:id="btnIniciar" layoutX="52.0" layoutY="697.0" mnemonicParsing="false" onAction="#IniciarAnimacion" style="-fx-background-color: yellowgreen; -fx-background-radius: 30;" text="Iniciar" textFill="WHITE" />
-      <Button fx:id="BtnSalir" layoutX="126.0" layoutY="697.0" mnemonicParsing="false" onAction="#Finalizar" style="-fx-background-color: red; -fx-background-radius: 30;" text="Terminar" textFill="WHITE" />
-      <ImageView fitHeight="711.0" fitWidth="607.0" layoutX="138.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="btnIniciar" layoutX="1.0" layoutY="648.0" mnemonicParsing="false" onAction="#IniciarAnimacion" style="-fx-background-color: yellowgreen; -fx-background-radius: 30;" text="Iniciar" textFill="WHITE" />
+      <Button fx:id="BtnSalir" layoutX="75.0" layoutY="648.0" mnemonicParsing="false" onAction="#Finalizar" style="-fx-background-color: red; -fx-background-radius: 30;" text="Terminar" textFill="WHITE" />
+      <ImageView fitHeight="711.0" fitWidth="607.0" layoutX="137.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../resources/zyro-image.png" />
          </image>
       </ImageView>
-      <Rectangle fx:id="table3" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="53.0" layoutX="413.0" layoutY="87.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table4" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="53.0" layoutX="519.0" layoutY="87.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table1" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="210.0" layoutY="88.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table5" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="53.0" layoutX="619.0" layoutY="87.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table2" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="312.0" layoutY="88.0" stroke="#ffffff00" strokeType="INSIDE" width="48.0" />
+      <Rectangle fx:id="table1" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="275.0" layoutY="218.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
+      <Rectangle fx:id="table5" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="53.0" layoutX="644.0" layoutY="437.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
       <Circle fx:id="chef" fill="#b2b2b2" layoutX="523.0" layoutY="340.0" radius="15.0" stroke="#ffffff00" strokeType="INSIDE" />
-      <Text fill="WHITE" layoutX="125.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes">
+      <Text fill="WHITE" layoutX="171.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes">
          <font>
             <Font name="Dosis ExtraLight" size="19.0" />
          </font>
@@ -36,162 +32,139 @@
          <font>
             <Font size="18.0" />
          </font></Label>
-      <Line endX="876.0" layoutX="158.0" layoutY="33.0" startX="-105.0" />
-      <Line endX="198.5" endY="463.5" layoutX="836.0" layoutY="201.0" startX="198.5" startY="-167.5" />
-      <Line endX="-104.0" endY="0.5" layoutX="491.0" layoutY="664.0" startX="-438.0" startY="0.5" />
-      <Line endX="0.5" endY="535.0" layoutX="52.0" layoutY="129.0" startX="0.5" startY="-96.0" />
-      <Line endX="-0.5" endY="142.5" layoutX="388.0" layoutY="524.0" startX="-0.5" startY="70.0" />
-      <Text layoutX="471.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recepcionista." wrappingWidth="77.0" />
-      <Line endX="223.0" endY="-13.0" layoutX="811.0" layoutY="678.0" startX="-180.0" startY="-13.0" />
-      <Line endX="-0.5" endY="142.5" layoutX="631.0" layoutY="524.0" startX="-0.5" startY="70.0" />
-      <Line endX="208.0" endY="43.5" layoutX="422.0" layoutY="550.0" startX="-34.0" startY="43.5" />
-      <Line endX="230.0" endY="116.0" layoutX="401.0" layoutY="502.0" startX="-13.0" startY="116.0" />
-      <Line endX="560.0" layoutX="321.0" layoutY="143.0" startX="-111.0" startY="-1.0" />
-      <Line endX="30.5" endY="201.0" layoutX="179.0" layoutY="213.0" startX="30.5" startY="-70.5" />
-      <Line endX="561.0" layoutX="321.0" layoutY="414.0" startX="-111.0" startY="0.5" />
-      <Line endX="-152.5" endY="212.5" layoutX="1035.0" layoutY="201.0" startX="-153.5" startY="-57.5" />
-      <Rectangle fx:id="table6" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="725.0" layoutY="87.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table7" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="811.0" layoutY="89.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table8" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="904.0" layoutY="151.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table9" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="904.0" layoutY="248.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table10" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="904.0" layoutY="339.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table11" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="811.0" layoutY="422.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table12" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="715.0" layoutY="422.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table13" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="619.0" layoutY="422.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table14" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="523.0" layoutY="422.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table15" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="420.0" layoutY="422.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <ImageView fx:id="mesa111" fitHeight="50.0" fitWidth="48.0" layoutX="211.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+      <Text layoutX="166.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recepcionista." wrappingWidth="77.0" />
+      <Rectangle fx:id="table9" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="561.0" layoutY="567.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
+      <Rectangle fx:id="table10" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="462.0" layoutY="652.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
+      <Rectangle fx:id="table11" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="359.0" layoutY="652.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
+      <Rectangle fx:id="table12" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="250.0" layoutY="641.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
+      <Rectangle fx:id="table14" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="250.0" layoutY="642.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
+      <Rectangle fx:id="table15" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="336.0" layoutY="481.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
+      <ImageView fx:id="mesa111" fitHeight="74.0" fitWidth="66.0" layoutX="147.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <Rectangle fx:id="table16" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="311.0" layoutY="422.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table17" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="210.0" layoutY="422.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table18" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="141.0" layoutY="339.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table19" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="141.0" layoutY="248.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <Rectangle fx:id="table20" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="141.0" layoutY="151.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
-      <ImageView fx:id="mesa11" fitHeight="50.0" fitWidth="48.0" layoutX="312.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+      <Rectangle fx:id="table18" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="160.0" layoutY="427.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
+      <Rectangle fx:id="table19" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="232.0" layoutY="372.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
+      <Rectangle fx:id="table20" arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="50.0" layoutX="162.0" layoutY="316.0" stroke="#ffffff00" strokeType="INSIDE" width="50.0" />
+      <ImageView fx:id="mesa11" fitHeight="74.0" fitWidth="73.0" layoutX="263.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa112" fitHeight="50.0" fitWidth="48.0" layoutX="414.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa112" fitHeight="74.0" fitWidth="73.0" layoutX="563.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa1121" fitHeight="50.0" fitWidth="48.0" layoutX="520.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa1121" fitHeight="74.0" fitWidth="83.0" layoutX="635.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa11211" fitHeight="50.0" fitWidth="48.0" layoutX="620.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa11211" fitHeight="100.0" fitWidth="77.0" layoutX="630.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa112111" fitHeight="50.0" fitWidth="48.0" layoutX="726.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa112111" fitHeight="78.0" fitWidth="77.0" layoutX="548.0" layoutY="555.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa1121111" fitHeight="50.0" fitWidth="48.0" layoutX="813.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa1121111" fitHeight="74.0" fitWidth="90.0" layoutX="238.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa11211111" fitHeight="50.0" fitWidth="48.0" layoutX="905.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa11211111" fitHeight="74.0" fitWidth="73.0" layoutX="347.0" layoutY="640.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa112111111" fitHeight="50.0" fitWidth="48.0" layoutX="905.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa112111111" fitHeight="91.0" fitWidth="77.0" layoutX="448.0" layoutY="638.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa1121111111" fitHeight="50.0" fitWidth="48.0" layoutX="905.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa1121111111" fitHeight="67.0" fitWidth="64.0" layoutX="554.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa11211111111" fitHeight="50.0" fitWidth="48.0" layoutX="813.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa11211111111" fitHeight="78.0" fitWidth="66.0" layoutX="649.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa112111111111" fitHeight="50.0" fitWidth="48.0" layoutX="716.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa112111111111" fitHeight="91.0" fitWidth="73.0" layoutX="657.0" layoutY="555.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa1121111111111" fitHeight="50.0" fitWidth="48.0" layoutX="620.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa1121111111111" fitHeight="91.0" fitWidth="73.0" layoutX="635.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa11211111111111" fitHeight="50.0" fitWidth="48.0" layoutX="520.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa11211111111111" fitHeight="74.0" fitWidth="73.0" layoutX="550.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa112111111111111" fitHeight="50.0" fitWidth="48.0" layoutX="421.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa112111111111111" fitHeight="67.0" fitWidth="66.0" layoutX="328.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa1121111111111111" fitHeight="50.0" fitWidth="48.0" layoutX="312.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa1121111111111111" fitHeight="74.0" fitWidth="73.0" layoutX="220.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa11211111111111111" fitHeight="50.0" fitWidth="48.0" layoutX="211.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa11211111111111111" fitHeight="81.0" fitWidth="66.0" layoutX="147.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa112111111111111111" fitHeight="50.0" fitWidth="48.0" layoutX="142.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa112111111111111111" fitHeight="74.0" fitWidth="73.0" layoutX="148.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa1121111111111111111" fitHeight="50.0" fitWidth="48.0" layoutX="142.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa1121111111111111111" fitHeight="74.0" fitWidth="77.0" layoutX="150.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa11211111111111111111" fitHeight="50.0" fitWidth="48.0" layoutX="142.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa11211111111111111111" fitHeight="74.0" fitWidth="77.0" layoutX="238.0" layoutY="557.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="264.0" fitWidth="271.0" layoutX="220.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="49.0" fitWidth="30.0" layoutX="386.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/images.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="121.0" fitWidth="143.0" layoutX="420.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa112111111111111111111" fitHeight="65.0" fitWidth="48.0" layoutX="499.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/cocinero-y-chef-imagen-animada-0036.gif" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa112111111111111111111" fitHeight="110.0" fitWidth="90.0" layoutX="750.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mesa1121111111111111111111" fitHeight="53.0" fitWidth="44.0" layoutX="379.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/descarga.png" />
+            <Image url="@../resources/mesa.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="mesa1121111111111111111111" fitHeight="100.0" fitWidth="143.0" layoutX="651.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../resources/Screenshot_1.png" />
-         </image>
-      </ImageView>
-      <Text layoutX="125.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ordenar" />
-      <Text layoutX="656.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Libre" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#06f500" height="21.0" layoutX="621.0" layoutY="354.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f50000" height="21.0" layoutX="621.0" layoutY="383.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
-      <Text layoutX="658.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocupado" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MAGENTA" height="21.0" layoutX="89.0" layoutY="592.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
-      <Text layoutX="125.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comiendo" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SADDLEBROWN" height="21.0" layoutX="89.0" layoutY="620.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+      <Text layoutX="67.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ordenar" />
+      <Text layoutX="68.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Libre" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#06f500" height="21.0" layoutX="33.0" layoutY="427.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f50000" height="21.0" layoutX="33.0" layoutY="456.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+      <Text layoutX="70.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocupado" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MAGENTA" height="21.0" layoutX="31.0" layoutY="534.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+      <Text layoutX="67.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comiendo" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SADDLEBROWN" height="21.0" layoutX="31.0" layoutY="562.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+      <Circle fill="DODGERBLUE" layoutX="263.0" layoutY="332.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
    </children>
 </AnchorPane>

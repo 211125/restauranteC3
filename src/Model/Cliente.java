@@ -16,15 +16,15 @@ public class Cliente implements Runnable{
         this.anchor = anchor;
         this.monitor = monitor;
         positions = new String[20];
-        positions[0] = "235 60";
-        positions[1] = "336 60";
-        positions[2] = "438 60";
-        positions[3] = "546 60";
+        positions[0] = "300 189";
+        positions[1] = "150 281";
+        positions[2] = "220 332";
+        positions[3] = "187 339";
         positions[4] = "644 60";
         positions[5] = "750 60";
         positions[6] = "833 60";
 
-        positions[7] = "929 114";
+        positions[7] = "328 472";
         positions[8] = "929 224";
         positions[9] = "929 307";
         positions[10] = "836 398";
