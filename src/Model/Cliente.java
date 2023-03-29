@@ -19,26 +19,26 @@ public class Cliente implements Runnable{
         positions[0] = "300 189";
         positions[1] = "150 281";
         positions[2] = "220 332";
-        positions[3] = "187 339";
-        positions[4] = "644 60";
-        positions[5] = "750 60";
-        positions[6] = "833 60";
+        positions[3] = "185 456";
+        positions[4] = "361 505";
+        positions[5] = "180 580";
+        positions[6] = "275 591";
 
-        positions[7] = "328 472";
-        positions[8] = "929 224";
-        positions[9] = "929 307";
-        positions[10] = "836 398";
+        positions[7] = "180 652";
+        positions[8] = "275 648";
+        positions[9] = "401 677";
+        positions[10] = "508 667";
 
-        positions[11] = "740 398";
-        positions[12] = "644 389";
-        positions[13] = "550 389";
-        positions[14] = "445 389";
-        positions[15] = "336 389";
-        positions[16] = "235 389";
-        positions[17] = "166 315";
+        positions[11] = "600 688";
+        positions[12] = "707 673";
+        positions[13] = "708 591";
+        positions[14] = "625 592";
+        positions[15] = "672 445";
+        positions[16] = "580 367";
+        positions[17] = "672 339";
 
-        positions[18] = "166 224";
-        positions[19] = "166 127";
+        positions[18] = "611 243";
+        positions[19] = "694 176";
     }
     @Override
     public void run() {
